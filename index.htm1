@@ -99,6 +99,9 @@ body {
   <div class="card">
     <h2>📞 Contact</h2>
     <p>+1 (773) 458-4281</p>
+<a href="tel:+17734584281" style="display:inline-block;padding:15px 25px;background:#ff3c3c;color:white;font-size:20px;border-radius:8px;text-decoration:none;">
+📞 CALL NOW
+</a>
   </div>
 
   <div class="card">
