@@ -124,6 +124,20 @@ body {
   box-shadow: 0 0 15px rgba(255,0,0,0.6);
   z-index: 999;
 }
+.gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-scroll img {
+  width: 300px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}  
 </style>
 </head>
 
