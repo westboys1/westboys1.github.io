@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>West Boys Truck & Trailer Repair</title>
+
+<style>
+body {
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0b0f1a;
+  color:white;
+}
+
+/* HERO */
+.hero {
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('img1.jpg');
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1 {
+  font-size:46px;
+  margin-bottom:10px;
+}
+
+.hero p {
+  font-size:20px;
+  color:#ccc;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:25px;
+  padding:15px 30px;
+  background:#00c2ff;
+  color:black;
+  font-weight:bold;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+/* INFO */
+.info {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+  padding:50px 20px;
+}
+
+.card {
+  background:#11182a;
+  padding:25px;
+  border-radius:12px;
+  width:280px;
+  text-align:center;
+}
+
+/* GALLERY */
+.gallery {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap:10px;
+  padding:20px;
+}
+
+.gallery img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* FOOTER */
+.footer {
+  text-align:center;
+  padding:30px;
+  background:#0d1325;
+  color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>WEST BOYS TRUCK & TRAILER REPAIR</h1>
+  <p>24/7 MOBILE TRUCK REPAIR • CHICAGO</p>
+  <a class="btn" href="tel:+1XXXXXXXXXX">CALL NOW</a>
+</div>
+
+<!-- INFO -->
+<div class="info">
+
+  <div class="card">
+    <h2>📞 Contact</h2>
+    <p>+1 (773) 458-4281</p>
+  </div>
+
+  <div class="card">
+    <h2>📍 Location</h2>
+    <p>Chicago Area</p>
+  </div>
+
+  <div class="card">
+    <h2>💳 Payment</h2>
+    <p>Cash<br>EFS Check<br>Credit Card<br>Zelle</p>
+  </div>
+
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+  <img src="img1.jpg">
+  <img src="img2.jpg">
+  <img src="img3.jpg">
+  <img src="img4.jpg">
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  West Boys Truck & Trailer Repair © 2026
+</div>
+
+</body>
+</html>
