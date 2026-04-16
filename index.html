@@ -169,6 +169,32 @@ body {
   transform: scale(1.2);
   filter: brightness(0) invert(1) drop-shadow(0 0 5px #FFD700);
 }
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: #FFD700;
+  color: #000;
+  box-shadow: 0 5px 20px rgba(255,215,0,0.5);
+}
 </style>
 </head>
 
