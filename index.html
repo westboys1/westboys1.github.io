@@ -326,7 +326,31 @@ body {
 <a href="tel:+17734584281" style="display:inline-block;padding:15px 25px;background:#ff3c3c;color:white;font-size:20px;border-radius:8px;text-decoration:none;">
 📞 CALL NOW
 </a>
+    <div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
   </div>
+    <script>
+  const images = document.querySelectorAll('.gallery-scroll img');
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".close");
+
+  images.forEach(img => {
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
 
   <div class="card">
     <h2>📍 Location</h2>
@@ -427,8 +451,4 @@ body {
   </div>
 <a href="tel:+17734584281" class="call-btn">📞 CALL NOW</a>
 </body>
-  <div id="imageModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImg">
-</div>
 </html>
