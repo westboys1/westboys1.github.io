@@ -350,14 +350,16 @@ body {
   <span class="close">&times;</span>
   <img class="modal-content" id="modalImg">
   </div>
-    <script>
+   <script>
+document.addEventListener("DOMContentLoaded", function() {
+
   const images = document.querySelectorAll('.gallery-scroll img');
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImg");
   const closeBtn = document.querySelector(".close");
 
   images.forEach(img => {
-    img.onclick = function(){
+    img.onclick = function() {
       modal.style.display = "block";
       modalImg.src = this.src;
     }
@@ -370,8 +372,9 @@ body {
   modal.onclick = function() {
     modal.style.display = "none";
   }
-</script>
 
+});
+</script>
   <div class="card">
     <h2>📍 Location</h2>
     <p>Chicago Area + 500ml
