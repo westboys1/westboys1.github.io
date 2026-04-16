@@ -85,7 +85,7 @@ body {
 }
 
 .card {
-   background: linear-gradient(135deg, #1e2f4d, #2b4c7e);
+    background: linear-gradient(135deg, #1e2f4d, #2b4c7e);
   padding: 25px;
   border-radius: 15px;
   color: #fff;
@@ -95,6 +95,15 @@ body {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+  color: #FFD700;
+  margin-bottom: 10px;
+}
 /* GALLERY */
 .gallery-scroll {
   display: flex;
