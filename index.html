@@ -358,11 +358,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const modalImg = document.getElementById("modalImg");
   const closeBtn = document.querySelector(".close");
 
-  images.forEach(img => {
-    img.onclick = function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    }
+  document.querySelectorAll("img").forEach(img => {
+  img.addEventListener("click", function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+});
   });
 
   closeBtn.onclick = function() {
