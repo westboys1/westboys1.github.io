@@ -93,17 +93,22 @@ body {
 }
 
 /* GALLERY */
-.gallery-scroll {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding: 20px;
+.gallery {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
 }
 
-.gallery-scroll img {
-  width: 300px;
-  border-radius: 10px;
-  flex-shrink: 0;
+.gallery img {
+    flex: 0 0 80%;
+    max-width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    scroll-snap-align: center;
 }
 /* FOOTER */
 .footer {
